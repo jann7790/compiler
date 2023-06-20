@@ -1,0 +1,14 @@
+function itFibonacci (n: int) : int
+  if n = 1 then
+    put 1
+  end if
+  if n = 2 then
+      result 2
+  end if
+
+
+  result itFibonacci(n-1) + itFibonacci(n-2)
+end itFibonacci
+
+put itFibonacci(5)
+

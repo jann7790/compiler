@@ -1,0 +1,187 @@
+/*-------------------------------------------------*/
+/* Java Assembly Code */
+class example
+{
+ method public static void main(java.lang.String[])
+ max_stack 15
+ max_locals 15
+ {
+sipush 10
+istore 0
+Lbegin100:
+iload 0
+sipush 1
+isub
+iflt Ltrue0
+   iconst_0
+   goto Lfalse0
+Ltrue0:
+   iconst_1
+Lfalse0:
+ifne Lexit100
+sipush 1
+istore 1
+Lbegin200:
+iload 1
+sipush 10
+isub
+ifgt Ltrue1
+   iconst_0
+   goto Lfalse1
+Ltrue1:
+   iconst_1
+Lfalse1:
+ifne Lexit200
+sipush 0
+istore 2
+Lbegin300:
+iload 2
+sipush 3
+isub
+ifgt Ltrue2
+   iconst_0
+   goto Lfalse2
+Ltrue2:
+   iconst_1
+Lfalse2:
+ifne Lexit300
+getstatic java.io.PrintStream java.lang.System.out
+iload 2
+invokevirtual void java.io.PrintStream.print(int)
+iload 1
+iload 2
+   isub
+sipush 5
+   isub
+   iflt Ltrue3
+   iconst_0
+   goto Lfalse3
+Ltrue3:
+   iconst_1
+Lfalse3:
+	nop
+ifeq Lfalse400
+getstatic java.io.PrintStream java.lang.System.out
+iload 1
+invokevirtual void java.io.PrintStream.print(int)
+getstatic java.io.PrintStream java.lang.System.out
+ldc "aaa"
+invokevirtual void java.io.PrintStream.print(java.lang.String)
+goto Lexit400
+Lfalse400:
+	nop
+Lexit400:
+	nop
+iload 2
+sipush 1
+iadd
+istore 2
+goto Lbegin300
+Lexit300:
+	nop
+sipush 0
+istore 2
+Lbegin301:
+iload 2
+sipush 5
+   isub
+   ifgt Ltrue4
+   iconst_0
+   goto Lfalse4
+Ltrue4:
+   iconst_1
+Lfalse4:
+	nop
+ifne Lexit301
+iload 2
+sipush 1
+   iadd
+   istore 2
+getstatic java.io.PrintStream java.lang.System.out
+iload 2
+invokevirtual void java.io.PrintStream.print(int)
+getstatic java.io.PrintStream java.lang.System.out
+ldc "gogogoog"
+invokevirtual void java.io.PrintStream.print(java.lang.String)
+goto Lbegin301
+Lexit301:
+	nop
+iload 1
+sipush 1
+iadd
+istore 1
+goto Lbegin200
+Lexit200:
+	nop
+sipush 1
+istore 1
+Lbegin201:
+iload 1
+sipush 10
+isub
+ifgt Ltrue5
+   iconst_0
+   goto Lfalse5
+Ltrue5:
+   iconst_1
+Lfalse5:
+ifne Lexit201
+getstatic java.io.PrintStream java.lang.System.out
+iload 1
+invokevirtual void java.io.PrintStream.print(int)
+iload 1
+sipush 1
+iadd
+istore 1
+goto Lbegin201
+Lexit201:
+	nop
+sipush 10
+istore 1
+Lbegin202:
+iload 1
+sipush 20
+isub
+ifgt Ltrue6
+   iconst_0
+   goto Lfalse6
+Ltrue6:
+   iconst_1
+Lfalse6:
+ifne Lexit202
+iload 1
+sipush 15
+   isub
+   ifgt Ltrue7
+   iconst_0
+   goto Lfalse7
+Ltrue7:
+   iconst_1
+Lfalse7:
+	nop
+ifeq Lfalse302
+getstatic java.io.PrintStream java.lang.System.out
+iload 1
+invokevirtual void java.io.PrintStream.print(int)
+goto Lexit302
+Lfalse302:
+	nop
+Lexit302:
+	nop
+iload 1
+sipush 1
+iadd
+istore 1
+goto Lbegin202
+Lexit202:
+	nop
+iload 0
+sipush 1
+isub
+istore 0
+goto Lbegin100
+Lexit100:
+	nop
+ return
+ }
+}

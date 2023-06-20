@@ -1,0 +1,319 @@
+
+1: {% This test program computes the Nth Fibonacci number    using recursion and iteration. %}
+2: 
+3: % global variables
+<CONST>
+<identifier:n>
+<:>
+<INT>
+<:=>
+<integer:8>
+4: const  n: int := 8
+5: 
+6: % iterative function
+<FUNCTION>
+<identifier:itFibonacci>
+<(>
+<identifier:n>
+<:>
+<INT>
+<)>
+<:>
+<INT>
+7: function itFibonacci (n: int) : int
+<VAR>
+<identifier:Fn>
+<:>
+<INT>
+8:   var Fn: int
+<VAR>
+<identifier:FNminus1>
+<:>
+<INT>
+9:   var FNminus1: int
+<VAR>
+<identifier:temp>
+<:>
+<INT>
+10:   var temp: int
+11: 
+<identifier:Fn>
+<:=>
+<integer:1>
+12:   Fn := 1
+<identifier:FNminus1>
+<:=>
+<integer:1>
+13:   FNminus1 := 1
+<LOOP>
+14:   loop
+<EXIT>
+<WHEN>
+<(>
+<identifier:n>
+<<=>
+<integer:2>
+<)>
+15:     exit when (n <= 2) 
+<identifier:temp>
+<:=>
+<identifier:Fn>
+16:     temp := Fn
+<identifier:Fn>
+<:=>
+<identifier:Fn>
+<+>
+<identifier:FNminus1>
+17:     Fn := Fn + FNminus1
+<identifier:FNminus1>
+<:=>
+<identifier:temp>
+18:     FNminus1 := temp
+<identifier:n>
+<:=>
+<identifier:n>
+<->
+<integer:1>
+19:     n := n - 1
+<END>
+<LOOP>
+20:   end loop
+<RESULT>
+<identifier:Fn>
+21:   result Fn
+<END>
+<identifier:itFibonacci>
+22: end itFibonacci
+23: 
+24: % main program 
+<PUT>
+<string:N: >
+25: put "N: "
+<PUT>
+<identifier:n>
+26: put n
+<SKIP>
+27: skip
+<PUT>
+<string:Result of iterative computation:  >
+28: put "Result of iterative computation:  "
+<PUT>
+<identifier:itFibonacci>
+<(>
+<identifier:n>
+<)>
+29: put itFibonacci(n)
+30: 
+
+Symbol Table:
+0: n
+1: itFibonacci
+2: Fn
+3: FNminus1
+4: temp
+1: % Hello World Example 
+2:   
+3: % Print text to the console
+<PUT>
+<(>
+<string:Hello World>
+<)>
+4: put ("Hello World")
+
+Symbol Table:
+
+
+
+1: {% Sigma.st % % Compute sum = 1 + 2 + ... + n %}
+2: 
+3: % constant and variable declarations
+<CONST>
+<identifier:n>
+<:>
+<INT>
+<:=>
+<integer:10>
+4: const n: int := 10
+<VAR>
+<identifier:sum>
+<:>
+<INT>
+5: var sum: int
+<VAR>
+<identifier:index>
+<:>
+<INT>
+6: var index: int
+7: 
+8: % main statements
+<identifier:sum>
+<:=>
+<integer:0>
+9: sum := 0
+<FOR>
+<identifier:index>
+<:>
+<integer:1>
+<.>
+<.>
+<identifier:n>
+10: for index: 1 .. n 
+<identifier:sum>
+<:=>
+<identifier:sum>
+<+>
+<identifier:index>
+11:   sum := sum + index
+<END>
+<FOR>
+12: end for
+<PUT>
+<string:The result is >
+13: put "The result is "
+<PUT>
+<identifier:sum>
+14: put sum
+<SKIP>
+15: skip
+16: 
+17: % loop
+<identifier:sum>
+<:=>
+<integer:0>
+18: sum := 0
+<identifier:index>
+<:=>
+<integer:1>
+19: index := 1
+<LOOP>
+20: loop
+<identifier:sum>
+<:=>
+<identifier:sum>
+<+>
+<identifier:index>
+21:   sum := sum + index
+<identifier:index>
+<:=>
+<identifier:index>
+<+>
+<integer:1>
+22:   index := index + 1
+<EXIT>
+<WHEN>
+<identifier:index>
+<=>
+<identifier:n>
+23:   exit when index = n
+<END>
+<LOOP>
+24: end loop
+<PUT>
+<string:The result is >
+25: put "The result is "
+<PUT>
+<identifier:sum>
+26: put sum
+
+Symbol Table:
+0: n
+1: sum
+2: index
+
+
+
+1: {% Sigma.st % % Compute sum = 1 + 2 + ... + n %}
+2: 
+3: % constant and variable declarations
+<CONST>
+<identifier:n>
+<:>
+<INT>
+<:=>
+<integer:10>
+4: const n: int := 10
+<VAR>
+<identifier:sum>
+<:>
+<INT>
+5: var sum: int
+<VAR>
+<identifier:index>
+<:>
+<INT>
+6: var index: int
+7: 
+8: % main statements
+<identifier:sum>
+<:=>
+<integer:0>
+9: sum := 0
+<FOR>
+<identifier:index>
+<:>
+<integer:1>
+<.>
+<.>
+<identifier:n>
+10: for index: 1 .. n 
+<identifier:sum>
+<:=>
+<identifier:sum>
+<+>
+<identifier:index>
+11:   sum := sum + index
+<END>
+<FOR>
+12: end for
+<PUT>
+<string:The result is >
+13: put "The result is "
+<PUT>
+<identifier:sum>
+14: put sum
+<SKIP>
+15: skip
+16: 
+17: % loop
+<identifier:sum>
+<:=>
+<integer:0>
+18: sum := 0
+<identifier:index>
+<:=>
+<integer:1>
+19: index := 1
+<LOOP>
+20: loop
+<identifier:sum>
+<:=>
+<identifier:sum>
+<+>
+<identifier:index>
+21:   sum := sum + index
+<identifier:index>
+<:=>
+<identifier:index>
+<+>
+<integer:1>
+22:   index := index + 1
+<EXIT>
+<WHEN>
+<identifier:index>
+<=>
+<identifier:n>
+23:   exit when index = n
+<END>
+<LOOP>
+24: end loop
+<PUT>
+<string:The result is >
+25: put "The result is "
+<PUT>
+<identifier:sum>
+26: put sum
+
+Symbol Table:
+0: n
+1: sum
+2: index

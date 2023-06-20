@@ -1,0 +1,89 @@
+var sum :int := 2
+var a :int := 5 * sum +7
+var a :int := 9 * -5 * sum +7
+var k :string := "hello"
+var zz :string := "heapple"
+
+
+
+
+
+var s :string
+var i := 10
+var d :real
+var b :bool := false
+const s :string := "Hey There"
+const i := -25
+const f := 3.14
+const b :bool := true
+var a: array 1..10 of int
+var b: array 0..5 of bool
+var f: array 1..100 of real
+
+function func1(x :int, y :int, z :string) :bool
+	var a: array 1..10 of int
+end func1
+
+
+var tuna := 59*8+7
+var apple := 7+59*8
+var orange := 7+59/8
+var nip := 8/7+59
+var dd := -8+5*10
+var orangehole := -8+5-8+6
+
+
+
+
+
+
+
+
+var c := 0
+
+a+b*c+4564654+c
+a=c
+-5+98+b*c mod apple
+a not= 7
+a and 69
+apple or orange
+c not b
+69 <= 77
+
+87 >= 54
+54 > 6
+9 < 3
+
+
+
+
+
+put a=b+7+6*5 mod 5
+
+apple := a=b+7+6*5 mod 5
+put a=b+7+6*5 mod 5
+get apple
+
+
+orange()
+orange(1+956+5, a not b)
+
+
+
+loop
+	const s :string := "Hey There"
+	for decreasing identifier : 6 .. 9
+		var f := 3.14
+	end for
+end loop
+
+
+
+
+begin
+	var a: array 1..10 of int
+	begin 
+		var b: array 0..5 of bool
+	end
+	var f: array 1..100 of real
+end
